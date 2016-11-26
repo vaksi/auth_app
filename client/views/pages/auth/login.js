@@ -16,8 +16,9 @@ if (Meteor.isClient) {
                         console.log(error);
 
                     }else{
+                        //Session.set('currentUser', result);
+                        Meteor.setAuthenticated(result);
                         console.log('success');
-                        //Session.set("twizzled", true);
                     }
             });
         }

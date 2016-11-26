@@ -10,5 +10,5 @@ This is a simple web app for login or signup using meteor. If you to running it,
 * npm install
 * npm start
 
-* You must be running Api 
+* You must be running Api
 

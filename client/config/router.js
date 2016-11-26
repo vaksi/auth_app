@@ -5,7 +5,7 @@ Router.configure({
 
 // Default route
 Router.route('/', function () {
-    Router.go('auth/login');
+    Router.go('/auth/login');
 }, {
     name: 'index'
 });
@@ -16,7 +16,11 @@ Router.route('/auth/login', function () {
     name: 'login'
 });
 
-
+Router.route('/home', function () {
+    this.render('home');
+}, {
+    name: 'home'
+});
 
 
 
